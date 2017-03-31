@@ -8,6 +8,7 @@ hyper-native-tls = "0.2.2"
 hyper = "0.10.5"
 rusqlite = "0.10.1"
 json  = "0.11.6"
+time = "0.1.36"
 
 [features]
 default = ["rusqlite/bundled"]

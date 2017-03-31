@@ -1,7 +1,5 @@
-use json::JsonValue;
-
 #[derive(Debug)]
 pub enum QuerierToWriter {
-    Packet(String, JsonValue),
+    Packet(Vec<(Option<String>, String)>, Vec<(String, String)>),
     Exit,
 }

@@ -28,3 +28,8 @@ pub fn create_database() -> Connection {
 pub fn open_database() -> Connection {
     Connection::open("database.sqlite3").unwrap()
 }
+
+#[derive(Debug)]
+pub enum WikiRacerError {
+    FormatError(&'static str),
+}
